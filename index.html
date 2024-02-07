@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/agenda.png" alt="Agenda de Contatos" class="header-image">
+            <h1>Agenda de Contatos</h1>
+        </div>
+        <div id="message" style="display: none;"></div>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="tel" id="phone" placeholder="Telefone" required>
+            <input type="email" id="email" placeholder="E-mail" required> <!-- Campo de e-mail adicionado -->
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th> <!-- Cabeçalho de E-mail adicionado -->
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="contacts-list">
+                <!-- Os contatos cadastrados aparecerão aqui -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rodrigo Cinelli. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
