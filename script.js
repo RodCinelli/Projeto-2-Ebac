@@ -3,6 +3,10 @@ window.onload = function() {
     for (var i = 0; i < contacts.length; i++) {
         addContactToTable(contacts[i]);
     }
+
+    // Ajustar a margem inferior do conteúdo de acordo com a altura do footer
+    var footerHeight = document.querySelector('footer').offsetHeight;
+    document.getElementById('content').style.marginBottom = footerHeight + 'px';
 };
 
 document.getElementById('contact-form').addEventListener('submit', function(e) {
