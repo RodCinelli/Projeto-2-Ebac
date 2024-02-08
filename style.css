@@ -105,7 +105,7 @@ table {
 
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     text-align: center;
 }
 
@@ -162,7 +162,7 @@ footer p {
         margin-bottom: 10px;
     }
 
-    input[type=text], input[type=email] {
+    input[type=text], input[type=tel], input[type=email] {
         min-width: auto;
         margin: 0 0 10px 0;
     }
